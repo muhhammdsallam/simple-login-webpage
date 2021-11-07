@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="form_validation.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="register_database.php" method="POST" class="login-email" onsubmit="return registerFormValidation()">
+			<p class="login-text">Create Account</p>
+            <div class="input-group">
+				<input type="text" placeholder="Name" name="name" id="name">
+				<span class="error-message" style="color: rgb(201, 38, 38);font-size: small;"><p id="nameError"></p></span>
+			</div>
+			<div class="input-group">
+				<input placeholder="Email" name="email" id="email">
+				<span class="error-message" style="color: rgb(201, 38, 38);font-size: small;"><p id="emailError"></p></span>
+			</div>
+			<div class="input-group">
+				<input type="password" placeholder="Password" name="password" id="password">
+				<span class="error-message" style="color: rgb(201, 38, 38);font-size: small;"><p id="passwordError"></p></span>
+			</div>
+            <div class="input-group">
+				<input type="password" placeholder="Confirm password" name="confirmPassword" id="confirmPassword">
+				<span class="error-message" style="color: rgb(201, 38, 38);font-size: small;"><p id="cpasswordError"></p></span>
+			</div>
+			<div class="input-group">
+				<button name="submit" class="btn">Register</button>
+			</div>
+			<p class="login-register-text">have an account? <a href="index.html">Login now</a>.</p>
+		</form>
+    </div>
+
+
+
+</body>
+
+</html>
