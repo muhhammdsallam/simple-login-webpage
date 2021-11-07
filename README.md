@@ -1,2 +1,2 @@
 # simple-login-webpage
-Simple login and registration web page for college assignment
+Simple login and registration web page using PHP and MySQL for college assignment
